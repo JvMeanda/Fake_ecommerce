@@ -17,12 +17,6 @@ O projeto totalmente responsivo com a utilização da framework TailwindCSS.
 - Adição de uma simulação de compra com cidade, número do cartão, parcelamento, etc.
 - Tradução das informações do produto do inglês para o português.
 
-## Layout web
-
-
-## Layout mobile
-
-
 # Tecnologias utilizadas
 - React / TailWindCSS
 
