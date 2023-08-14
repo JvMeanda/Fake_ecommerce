@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const Home = () => {
-  const { products } = useContext(ProductContext);
+  const { products, error } = useContext(ProductContext);
 
   const filteredProductsMen = products.filter(item => {
     return item.category === "men's clothing";
@@ -48,6 +48,13 @@ const Home = () => {
       },
     ],
   };
+
+    if (error) {
+        return <div className="flex items-center justify-center
+        py-24 font-semibold md:text-[22px] text-[18px]">
+          {error}
+          </div>;
+    }
 
   return (
     <div>
